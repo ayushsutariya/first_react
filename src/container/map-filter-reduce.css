@@ -1,0 +1,10 @@
+body{
+    /* background-color: black; */
+    color: white;
+}
+td{
+    border: 1px solid white;
+    width: 100vh;
+    text-align: center;
+    padding: 10px;
+}
