@@ -2,14 +2,16 @@ import React from "react";
 import "./map-filter-reduce.css";
 export default function Array_Function() {
   let data = ["Ayush", 101, "Dhruv", 102];
-  let data2 =["Prince", 103, "Darshil", 104,false];
+  let data2 =["Prince", 103, "Darshil", 104,];
   let data4=["Krish", 105, "Saavan", 106]
+  let data5 = [true, false]
+  let data6 =['Apple', 'Strawberry' ,'Orange', 'Mango']
   let data3 = data.concat(data2);
   let pop_ = data.pop();
   let push_ = data2.push(105);
   let unshift_ = data4.unshift(25,50);
   let shift_ = data4.shift();
-  let Tostring = data2.toString();
+  let splice_ = data6.splice(1,1,'Kiwi');
   // Func.pop();
   return (
     <table>
@@ -53,6 +55,22 @@ export default function Array_Function() {
       <tr>
       <td><h2>Shift(data4) : </h2></td>
         {data4.map((d,i)=> {
+            return(
+                <td>{d}</td>
+            )
+        })}
+      </tr>
+      <tr>
+      <td><h2>ToString : </h2></td>
+        {data5.map((d,i)=> {
+            return(
+                <td>{d.toString()}</td>
+            )
+        })}
+      </tr>
+      <tr>
+      <td><h2>Splice (Strawberry-position1) : </h2></td>
+        {data6.map((d,i)=> {
             return(
                 <td>{d}</td>
             )
