@@ -1,12 +1,18 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
+import MapFilterReduce from './container/MapFilterReduce';
 import ArrayFunction from './container/Array_Function';
-import MapFilterReduce from './container/map-filter-reduce';
+import StateClass from './container/StateClass';
+import CityClass from './container/CityClass';
 
 function App() {
   return (
-    <MapFilterReduce/>,
+    <>
+    <MapFilterReduce/>
     <ArrayFunction/>
+    <StateClass/>
+    <CityClass/>
+    </>
   );
 
 }

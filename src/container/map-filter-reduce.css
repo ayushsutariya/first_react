@@ -1,5 +1,5 @@
 body{
-    /* background-color: black; */
+    background-color: black;    
     color: white;
 }
 td{
@@ -7,4 +7,10 @@ td{
     width: 100vh;
     text-align: center;
     padding: 10px;
+}
+th{
+    width: 100vh;
+}
+h2{
+    color: white;
 }
