@@ -2,6 +2,7 @@ import React from "react";
 import "./map-filter-reduce.css";
 export default function Array_Function() {
   let data = ["Ayush", 101, "Dhruv", 102];
+  let data2 =["Prince", 103, "Darshil", 104];
   // Func.pop();
   return (
     <table>
@@ -11,13 +12,7 @@ export default function Array_Function() {
         </td>
       </th>
       <tr>
-        {data.map((d, i) => {
-          return (
-            <td>
-              <h2>{d}</h2>
-            </td>
-          );
-        })}
+        <td>{data.pop()}</td>
       </tr>
     </table>
   );
