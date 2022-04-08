@@ -20,20 +20,34 @@ export default class StateClass extends Component {
       }
     }
     
-     changestate(id){
-      //  console.log(id);
+     changestate = (id) =>{
+      //map
+      //match id 
+      //return new object
+      //setState
+      let newArr = this.state.stN.map((a) => {
+        if(a.id === 101){
+          let n = {
+                statename: 'Rajasthan',
+                id : 101,
+                status:false
+          }
+          return n
+        } else if(a.id === 102){
+          let n = {
+            statename: 'Kerela',
+            id : 102,
+            status:true
+      }
+      return n;
+        }
+         else {
+          return a
+        }
+      })
 
-      
-       //map, in if 
-       // new arr
-       // set state
-        //  console.log("ok");
-        // this.setState({
-        //     statename:'Guja',
-        //     arr: []
-        // })
-
-        
+      this.setState({stN:newArr})
+      console.log(newArr);
      }  
     
   render() {     

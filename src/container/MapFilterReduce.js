@@ -92,9 +92,7 @@ export default function MapFilterReduce() {
         </th>
         <tr>
         <td><h3>ID (id less than 104) :</h3></td>
-        {obj.map((a) => {
-          
-        })}
+        
         </tr>
       </table>
     </div>
