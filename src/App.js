@@ -8,6 +8,7 @@ import CityClass from './container/CityClass';
 function App() {
   return (
     <>
+    
     <MapFilterReduce/>
     <ArrayFunction/>
     <StateClass/>
