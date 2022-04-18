@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-function Loading (components){
+function Loading (Components){
   return function WithLoadingComponents(
     {isLoading, data}
   ){
@@ -10,7 +10,7 @@ function Loading (components){
     )
     } else{
       return(
-        <components data={data} />
+        <Components data={data} />
       )
     }
   }

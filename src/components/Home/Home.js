@@ -1,4 +1,5 @@
 function Home({data}){
+    console.log(data)
     return(
         data.map((d) => {
             return(
