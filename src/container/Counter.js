@@ -1,25 +1,27 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import './Counter.css'
+function Counter(props) {
+  const [count, setcount] = useState(10)
 
-export default function Counter(props) {
-  const [count, statecount] = useState[101];
+  const increamentCounter = () => {
+    setcount(() => count + 1)
+  }
 
-  const decreament = () => {
-    statecount(count--);
-  };
+  const decreamentCounter = () => {
+    if(count === 0){
+      count = 0;
+    } else{
+      setcount (() => count - 1)
+    }
+  }
 
   return (
-    <table>
-      <tr>
-        <td>
-          <button onClick={() => decreament()}>
-            <h2>-</h2>
-          </button>
-        </td>
-        <td>
-            <h2>{count}</h2>
-        </td>
-        
-      </tr>
-    </table>
+    <div>
+      <button className='same' onClick={() => decreamentCounter()}>-</button>
+      <span>{count}</span>
+      <button className='same' onClick={() => increamentCounter()}>+</button>
+    </div>
   );
 }
+
+export default Counter;

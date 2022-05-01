@@ -13,7 +13,6 @@ export default class ClockClass extends Component {
     this.setState({
       time : new Date()
     })
-<<<<<<< HEAD
   }
 
   componentDidMount = () => {
@@ -25,7 +24,7 @@ export default class ClockClass extends Component {
   render() {
     return (
       <div>{this.state.time.toLocaleTimeString()}</div>
-=======
+    )  
   } 
 
   componentDidMount = () => {
@@ -50,7 +49,6 @@ export default class ClockClass extends Component {
           <td><h2>{this.state.time.toLocaleTimeString()}</h2></td>
         </tr>
       </table>
->>>>>>> f11258459e1cba310a589f74022757c8a463bafa
     )
   }
 }
